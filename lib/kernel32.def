@@ -3,6 +3,7 @@ LIBRARY kernel32.dll
 EXPORTS
 AddAtomA
 AddAtomW
+AddVectoredExceptionHandler
 AllocConsole
 AllocLSCallback
 AllocSLCallback
@@ -84,6 +85,7 @@ CreateRemoteThread
 CreateSemaphoreA
 CreateSemaphoreW
 CreateSocketHandle
+CreateSymbolicLinkW
 CreateTapePartition
 CreateThread
 CreateToolhelp32Snapshot
@@ -235,6 +237,7 @@ GetCurrentDirectoryA
 GetCurrentDirectoryW
 GetCurrentProcess
 GetCurrentProcessId
+GetCurrentProcessorNumber
 GetCurrentThread
 GetCurrentThreadId
 GetDateFormatA
