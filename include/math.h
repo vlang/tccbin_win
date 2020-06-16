@@ -369,7 +369,7 @@ extern "C" {
   : sizeof (x) == sizeof (double) ? __signbit (x)	\
   : __signbitl (x))
 
-  extern double __cdecl exp2(double);
+  static double exp2 (double x) { return exp2(x); }
   extern float __cdecl exp2f(float);
   extern long double __cdecl exp2l(long double);
 
@@ -383,7 +383,7 @@ extern "C" {
   extern float __cdecl log1pf(float);
   extern long double __cdecl log1pl(long double);
 
-  extern double __cdecl log2 (double);
+  static double log2 (double x) { return log2(x); }
   extern float __cdecl log2f (float);
   extern long double __cdecl log2l (long double);
 
@@ -429,7 +429,7 @@ extern "C" {
 
   /* 7.12.7.1 */
   /* Implementations adapted from Cephes versions */ 
-  extern double __cdecl cbrt (double);
+  static double cbrt (double x) { return cbrt(x); }
   extern float __cdecl cbrtf (float);
   extern long double __cdecl cbrtl (long double);
 
@@ -450,26 +450,26 @@ extern "C" {
   extern long double __cdecl tanhl(long double);
 
   /* 7.12.8.1 The erf functions  */
-  extern double __cdecl erf (double);
+  static double erf (double x) { return erf(x); }
   extern float __cdecl erff (float);
   /* TODO
   extern long double __cdecl erfl (long double);
   */ 
 
   /* 7.12.8.2 The erfc functions  */
-  extern double __cdecl erfc (double);
+  static double erfc (double x) { return erfc(x); }
   extern float __cdecl erfcf (float);
   /* TODO
   extern long double __cdecl erfcl (long double);
   */ 
 
   /* 7.12.8.3 The lgamma functions */
-  extern double __cdecl lgamma (double);
+  static double lgamma (double x) { return lgamma(x); }
   extern float __cdecl lgammaf (float);
   extern long double __cdecl lgammal (long double);
 
   /* 7.12.8.4 The tgamma functions */
-  extern double __cdecl tgamma (double);
+  static double tgamma (double x) { return tgamma(x); }
   extern float __cdecl tgammaf (float);
   extern long double __cdecl tgammal (long double);
 
