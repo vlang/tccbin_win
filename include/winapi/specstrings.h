@@ -1,15 +1,9 @@
 /**
  * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the mingw-w64 runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER within this package.
  */
-
-#ifndef SPECSTRINGS_H
-#define SPECSTRINGS_H
-
 #define __specstrings
-
-#include <sal.h>
 
 #ifdef __cplusplus
 #ifndef __nothrow
@@ -283,8 +277,6 @@ extern "C" {
 #define SAL__control_entrypoint(category)
 #define SAL__data_entrypoint(category)
 
-#define __encoded_pointer
-
 #ifndef __fallthrough
 #define __fallthrough
 #endif
@@ -322,17 +314,9 @@ extern "C" {
 #endif
 
 #ifndef DECLSPEC_ADDRSAFE
-#if (_MSC_VER >= 1200) && (defined(_M_ALPHA) || defined(_M_AXP64))
-#define DECLSPEC_ADDRSAFE  __declspec(address_safe)
-#else
 #define DECLSPEC_ADDRSAFE
 #endif
-#endif /* DECLSPEC_ADDRSAFE */
 
 #ifdef __cplusplus
 }
-#endif
-
-#include <driverspecs.h>
-
 #endif
