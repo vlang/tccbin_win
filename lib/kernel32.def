@@ -1,6 +1,8 @@
 LIBRARY kernel32.dll
 
 EXPORTS
+AcquireSRWLockExclusive
+AcquireSRWLockShared
 AddAtomA
 AddAtomW
 AddVectoredExceptionHandler
@@ -421,6 +423,7 @@ HeapWalk
 InitAtomTable
 InitializeCriticalSection
 InitializeCriticalSectionAndSpinCount
+InitializeSRWLock
 InterlockedCompareExchange
 InterlockedDecrement
 InterlockedExchange
@@ -546,6 +549,8 @@ RegisterSysMsgHandler
 ReinitializeCriticalSection
 ReleaseMutex
 ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
 RemoveDirectoryA
 RemoveDirectoryW
 RequestDeviceWakeup
