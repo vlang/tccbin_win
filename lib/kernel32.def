@@ -447,6 +447,7 @@ IsSystemResumeAutomatic
 IsValidCodePage
 IsValidLanguageGroup
 IsValidLocale
+K32GetProcessMemoryInfo
 K32Thk1632Epilog
 K32Thk1632Prolog
 K32_NtCreateFile
