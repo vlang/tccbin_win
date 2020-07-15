@@ -270,6 +270,8 @@ GetFileInformationByHandle
 GetFileSize
 GetFileTime
 GetFileType
+GetFinalPathNameByHandle
+GetFinalPathNameByHandleW
 GetFullPathNameA
 GetFullPathNameW
 GetGeoInfoA
