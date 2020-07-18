@@ -4,4 +4,4 @@ This is based on prebuild [tcc compiler](https://repo.or.cz/tinycc.git), cut at 
 
 Please note that it is intended to be a *minimalism* version just necessary to support V on *Windows*. One of the beauties of tcc is its portability. 
 
-However, you may find [this official full version](http://download.savannah.gnu.org/releases/tinycc/winapi-full-for-0.9.27.zip) helpful as it includes many extra header files.
+However, you may find this [official full version of tcc](http://download.savannah.gnu.org/releases/tinycc/winapi-full-for-0.9.27.zip) helpful as it includes many extra header files.
